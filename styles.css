@@ -1,17 +1,27 @@
+/* body styles */
 body {
     text-align: center;
+    background-color: #ffd8a6;
+    font-family: arial, sans-serif;
 }
 h1 {
     color: blue;
-    font-size: 30px;
+    font-size: 60px;
 }
 h2 {
-    color: blue;
-    font-size: 24px;
+    color: #00109e;
+    font-size: 30px;
+}
+p {
+    margin: 30px;
+    font-size: 12pt;
+}
 ul {
     text-align: left;
+    position: relative;
+    left: 30%;
 }    
-}
+/* Diagram basics */
 .field {
     border-color: black;
     border-width: 1px;
@@ -31,8 +41,9 @@ ul {
     height: 40px;
     font-size: 30px;
     position: absolute;
-    color: orange;
+    color: blue;
 }
+/* first diagram ids */
 #kickOne { 
   top: 50px;
   left: 165px;
@@ -50,6 +61,32 @@ ul {
     bottom: 135px;
 }
 #kickFive {
+    left: 10px;
+    top: 170px;
+}
+/* Second diagram ids */
+#exOne {
+    top: 50px;
+    left: 165px;
+}
+#exTwo {
+    left: 75px;
+    top: 135px;
+}
+#exThree {
+    left: 10px;
+    top: 170px;
+}
+/* third diagram ids */
+#tieOne {
+    left: 75px;
+    top: 135px;
+}
+#tieTwo {
+    left: 75px;
+    bottom: 135px;
+}
+#tieThree {
     left: 10px;
     top: 170px;
 }
