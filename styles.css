@@ -26,7 +26,12 @@ ol {
     text-align: left;
     position: relative;
     left: 30%;
-}    
+} 
+.cool {
+    font-size: 80px;
+    color: orange;
+    font-family: cursive;
+}   
 /* Diagram basics */
 .field {
     border-color: black;
