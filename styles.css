@@ -32,6 +32,9 @@ ol {
     color: orange;
     font-family: cursive;
 }   
+.PS {
+    font-style: italic;
+}
 /* Diagram basics */
 .field {
     border-color: black;

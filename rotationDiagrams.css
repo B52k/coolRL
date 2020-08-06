@@ -1,0 +1,102 @@
+/* basic offensive diagram ids */
+#offOne {
+    bottom: 25px;
+    right: 200px;
+}
+#offTwo {
+    bottom: 175px;
+    right: 250px;
+}
+#offThree {
+    bottom: 100px;
+    left: 200px;
+}
+#oRotationBall {
+    bottom: 25px;
+    right: 150px;
+}
+#orangeChallenge {
+    right: 50px;
+    bottom: 25px;
+    border-color: orange;
+}
+#orangeFrontPost {
+    bottom: 100px;
+    right: 0px;
+    border-color: orange;
+}
+#orangeBackPost {
+    bottom: 200px;
+    right: 0px;
+    border-color: orange;
+}
+/* Cross animation diagram ids */
+#crossOne{  
+    animation-name: crossPass;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+@keyframes crossPass {
+    0% {
+        bottom: 25px;
+        right: 200px;
+    }
+    100% {
+        bottom: 175px;
+        right: 250px;
+    }
+}
+#crossTwo {
+    animation-name: crossShoot;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+@keyframes crossShoot {
+    0% {
+        bottom: 175px;
+        right: 250px;
+    }
+    100% {
+        bottom: 100px;
+        right: 400px;
+    }
+}
+#crossThree {
+    animation-name: crossDef;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+@keyframes crossDef {
+    0% {
+        bottom: 100px;
+        left: 200px;
+    }
+    100% {
+        bottom: 275px;
+        left: 400px;
+    }
+}
+#crossBall {
+    animation-name: longCross;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes longCross {
+    0% {
+        bottom: 25px;
+        right: 150px;
+    }
+    50% {
+        bottom: 150px;
+        right: 0px;
+        transform: scale(0.5);
+    }
+    100% {
+        bottom: 275px;
+        right: 100px;
+    }
+}
