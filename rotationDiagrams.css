@@ -18,17 +18,14 @@
 .orangeChallenge {
     right: 50px;
     bottom: 25px;
-    border-color: orange;
 }
 .orangeFrontPost {
     bottom: 100px;
     right: 0px;
-    border-color: orange;
 }
 .orangeBackPost {
     bottom: 200px;
     right: 0px;
-    border-color: orange;
 }
 /* Cross animation diagram ids */
 #crossOne{  
@@ -100,97 +97,184 @@
         right: 100px;
     }
 }
-/* over head diagram */
-#whoopsBall {
-    bottom: 25px;
-    right: 250px;
-}
-/* demo animation */
+/* Demo diagram */
 #demoOne {
-    animation-name: demoPass;
+    animation-name: demoScore;
     animation-duration: 5s;
     animation-iteration-count: infinite;
-    animation-timing-function: ease-out;
+    animation-timing-function: linear;
 }
-@keyframes demoPass {
+@keyframes demoScore {
     0% {
         bottom: 25px;
         right: 200px;
     }
-    20% {
-        bottom: 25px;
-        right: 25px;
-    }
-    40% {
-        bottom: 150px;
-        right: 25px;
-    }
     100% {
         bottom: 150px;
-        right: 200px;
+        right: 10px;
     }
 }
 #demoTwo {
-    animation-name: demoShoot;
+    animation-name: demoBlock;
     animation-duration: 5s;
     animation-iteration-count: infinite;
-    animation-timing-function: ease-out;
+    animation-timing-function: linear;
 }
-@keyframes demoShoot {
+@keyframes demoBlock {
     0% {
         bottom: 175px;
         right: 250px;
     }
-    50% {
-        bottom: 25px;
-        right: 250px;
+    60% {
+        bottom: 185px;
+        right: 50px;
     }
     100% {
-        bottom: 25px;
-        right: 25px;
+        bottom: 200px;
+        right: 90px;
     }
 }
 #demoThree {
-    animation-name: demoDef;
+    bottom: 100px;
+    left: 200px;
+}
+#orangeDemo {
+    animation-name: demoVictim;
     animation-duration: 5s;
     animation-iteration-count: infinite;
-    animation-timing-function: ease-out;
+    animation-timing-function: linear;
 }
-@keyframes demoDef {
+@keyframes demoVictim {
     0% {
-        bottom: 100px;
-        left: 200px;
+        bottom: 200px;
+        right: 0px;
     }
-    50% {
-        bottom: 175px;
-        left: 350px;
+    60% {
+        bottom: 185px;
+        right: 40px;
+        transform: scale(1.0);
+    }
+    65% {
+        transform: scale(0.0);
     }
     100% {
-        bottom: 175px;
-        left: 480px;
+        transform: scale(0.0);
     }
 }
 #demoBall {
-    animation-name: demoBall;
+    animation-name: demoGoal;
     animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes demoGoal {
+    0% {
+        bottom: 30px;
+        right: 210px;
+    }
+    100% {
+        bottom: 155px;
+        right: 0px;
+    }
+}
+/*defensive diagram ids */
+#defOne{  
+    animation-name: rotationOne;
+    animation-duration: 9s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-out;
 }
-@keyframes demoBall {
+@keyframes rotationOne {
     0% {
-        bottom: 25px;
-        right: 250px;
+        bottom: 0px;
+        left: 150px;
     }
-    25% {
-        transform: scale(2.0);
+    33% {
+        bottom: 250px;
+        left: 0px;
     }
-    50% {
-        bottom: 25px;
-        right: 230px;
-        transform: scale(1.0);
+    67%{
+        bottom: 100px;
+        left: 0px;
     }
     100% {
-        bottom: 25px;
-        right: 10px;
+        bottom: 0px;
+        left: 150px;
     }
+}
+#defTwo {
+    animation-name: rotationTwo;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+@keyframes rotationTwo {
+    0% {
+        bottom: 100px;
+        left: 0px;
+    }
+    33% {
+        bottom: 0px;
+        left: 150px;
+    }
+    67%{
+        bottom: 250px;
+        left: 0px;
+    }
+    100% {
+        bottom: 100px;
+        left: 0px;
+    }
+}
+#defThree {
+    animation-name: rotationThree;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+@keyframes rotationThree {
+    0% {
+        bottom: 250px;
+        left: 0px;
+    }
+    33% {
+        bottom: 100px;
+        left: 0px;
+    }
+    67%{
+        bottom: 0px;
+        left: 150px;
+    }
+    100% {
+        bottom: 250px;
+        left: 0px;
+    }
+}
+#orangeOnBall {
+    left: 250px;
+    bottom: 0px;
+}
+#dRotationBall {
+    left: 200px;
+    bottom: 0px;
+}
+#orangeCenter {
+    left: 150px;
+    bottom: 150px;
+}
+#orangeBack {
+    right: 150px;
+    bottom: 100px;
+}
+#bumpCap {
+    top: 100px;
+    left: 200px;
+}
+#backPostCap {
+    top: 25px;
+    left: 25px;
+}
+#frontPostCap {
+    bottom: 0px;
+    left: 10px;
 }

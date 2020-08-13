@@ -18,69 +18,45 @@
         If we accept these stipulations, you have a solid foundation for deriving the rules of rotation. If you're underneath the ball, you don't have the run up necessary to get a good shot. The guy defending the goal does, but he can't move until you turn back because someone has to defend the goal. But stay aware, because we want to follow up blocked shots, putting them back on frame or taking them back to the corner for another pass. This is only possible by switching positions. 
     </p>
     <p>
-        Let's talk about some different scenarios. The first is what I'm going to call "standard rotation." This is what's taught in <a href="https://www.youtube.com/watch?v=THcMLWOEc_o&list=PLrLBbJnregxcuuQY5kuMr73jZXBOqinat&index=9">Why You Suck at Rocket League </a> and its sources. The situation that video lays out is pretty familiar. It starts like this.
+        Now let's talk about what this looks like in practice. The below is what's taught in <a href="https://www.youtube.com/watch?v=THcMLWOEc_o&list=PLrLBbJnregxcuuQY5kuMr73jZXBOqinat&index=9">Why You Suck at Rocket League </a> and its sources. The situation that video lays out is pretty familiar. It starts like this.
     </p>
     <div class="field">
-        <div class="car offOne">1</div>
-         <div class="car offTwo">2</div>
-        <div class="car offThree">3</div>
+        <div class="blue car offOne">1</div>
+         <div class="blue car offTwo">2</div>
+        <div class="blue car offThree">3</div>
         <div class="ball" id="oRotationBall"></div>
-        <div class="car orangeChallenge"></div>
-        <div class="car orangeFrontPost"></div>
-        <div class="car orangeBackPost"></div>
+        <div class="orange car orangeChallenge"></div>
+        <div class="orange car orangeFrontPost"></div>
+        <div class="orange car orangeBackPost"></div>
     </div>
     <p>
         Here, I've outlined three positions for the blue team, like I've done for defense and kickoffs. Here, 1 is the passer. 2 is the shooter. Three is the defender. In this situation, the cross is going to go long to the far side of the field. We want to pick it up there and get another cross in quickly. How do we do that?
     </p>
     <div class="field">
-        <div class="car" id="crossOne"></div>
-         <div class="car" id="crossTwo"></div>
-        <div class="car" id="crossThree"></div>
+        <div class="blue car" id="crossOne"></div>
+         <div class="blue car" id="crossTwo"></div>
+        <div class="blue car" id="crossThree"></div>
         <div class="ball" id="crossBall"></div>
     </div>
     <p>
-        Hey, we did it! The defender has the best read on the play and angle of attack, so he can cross the ball back in, and the original passer can try to finish it. And we still have someone in defense. By the way, the rotation on a challenge works the same way. If 1 gets tackled, 3 should try to pick up the ball and bring it up, while 2 rotates back and 1 tracks back and becomes the shooter.
+        Hey, we did it! The defender has the best read on the play and angle of attack, so he can cross the ball back in, and the original passer can try to finish it. And we still have someone in defense. But we should rotate this way more often than just on long crosses. If a guy is taking it up the wall and gets tackled or loses control, the defender should come in to try to pick it back up. And if a shot is saved, the defender should come in to take another shot or go back to the corner for another cross. The defender can see the play and get the right run up, so he's the best man to come in and take over on ball when something happens. If we can work this kind of rotation in smoothly, we'll be quicker and more sustainable on offense.
     </p>
     <p>
-        Let's talk about another scenario that comes up for us a lot. In the diagram below, 1 had the ball, but it's flown over his head, putting him in an awkward position. He can U-turn or reverse, but even then, he'd be directly underneath the ball, which makes it hard to push it forward, and fend off the challenge. 
+       One little thing: RL is fluid, no rules are unbreakable, and that's especially true on offense. In certain situations, the defender won't be available to come up. Maybe he's been demo'd, maybe he has to go back and get boost. If so, that person should let us know, and we can play it more like 2's (which is basically a circle) for that time.
     </p>
-    <div class="field">
-        <div class="car offOne">1</div>
-         <div class="car offTwo">2</div>
-        <div class="car offThree">3</div>
-        <div class="ball" id="whoopsBall"></div>
-        <div class="car orangeChallenge"></div>
-        <div class="car orangeFrontPost"></div>
-        <div class="car orangeBackPost"></div>
-    </div>
     <p>
-        Instead, we should try to rotate! And in this case, we're going to do it a little differently. If two has been slightly trailing 1, as he is in the diagram, its not too hard for him to veer over and take over ball-handling duties. 3 can creep up and become 2, and 1 should circle around and rotate back. But while you're on your way, why don't you throw a little gum into the defensive works?
+        Now, I've promised a demo play and intend to deliver. The danger here is committing too many people up front and falling victim to an open goal on the counter attack. So we have to pick our spots and communicate. In the situation I'm going to show you, the "passer" is going to take the ball all the way to the goal himself. Maybe the defense is rotating slowly, maybe we're running out of time, maybe he's just feeling confident. Either way, he doesn't need the shooter to shoot, which leaves him free to attack.
     </p>
-    <!--I'm still up in the air over whether 2 or 3 should take ball. If 3 does, 2 holds position-->
     <div class="field">
-        <div class="car" id="demoOne"></div>
-        <div class="car" id="demoTwo"></div>
-        <div class="car" id="demoThree"></div>
+        <div class="blue car" id="demoOne"></div>
+         <div class="blue car" id="demoTwo"></div>
+        <div class="blue car" id="demoThree"></div>
+        <div class="orange car" id="orangeDemo"></div>
         <div class="ball" id="demoBall"></div>
-        <div class="car orangeFrontPost"></div>
     </div>
     <p>
-        I haven't invested time in an explosion animation yet, but hopefully you get the deal. If 1 loses the ball, he doesn't have to abandon the play. You know someone's gonna be sitting on that front post, and you know they're in the in the way. Steal the opponent's boost, demo the post guy, then get back. You can also see that this brings all three of us deep into opponent territory, so communication is key. If you want to move off the ball, make sure to do all these things:
+        Hopefully, that scans. Once the shooter knows the passer's intention, he can get out in front. Here, we're hoping to use the cut back to beat the front post, so when the back post comes up to challenge, he takes him out, then turns back toward his own half. If the passer instead decided to send a short cross to himself or tap it against the back wall to himself, then the front post would be the target.
     </p>
-    <ol>
-        <li>Say "ROTATE!"</li>
-        <li>Flip away from the ball to show that you're getting out of there</li>
-        <li>Steal boost and bump the post (Try turning off ball cam to make this easier)</li>
-        <li>Get back on defense!</li>
-    </ol>
-    <p>
-        There's another way to run a demo play without committing everyone, though it takes a little more forethought. We can get the ball on target on our own, right? With a lower, controlled cross, or a tap off the back wall, or a cut back. The problem is the defense. But if I've got the ball, and I intend to finish it, then I don't need my shooter. That frees him up to make some noise. We can see how that might work here.
-    </p>
-
-    <!--
-        I think I want to focus on the ball over the head, which lets 2 go to 1 and 1 to 3. On a challenge, 3 takes, 1 goes to 3, 2 stays, is I think what Sunless says. 
-        Actually, I've been thinking about it, and on paper, it usually makes more sense for 3 to take the ball here. In which case, 2 can just chill?
-    -->
 
     <h2>Defensive Rotation</h2>
 <p>
@@ -93,13 +69,13 @@
     So what should we do while defending? Well, we want to take turns attacking the ball while covering the rest of the field. In a situation where the opponent is heading down the sideline, it looks something like this.
 </p>
 <div class="field">
-    <div class="car" id="defOne"></div>
-     <div class="car" id="defTwo"></div>
-    <div class="car" id="defThree"></div>
-    <div class="car" id="orangeOnBall"></div>
+    <div class="blue car" id="defOne"></div>
+     <div class="blue car" id="defTwo"></div>
+    <div class="blue car" id="defThree"></div>
+    <div class="orange car" id="orangeOnBall"></div>
     <div class="ball" id="dRotationBall"></div>
-    <div class="car" id="orangeCenter"></div>
-    <div class="car" id="orangeBack"></div>
+    <div class="orange car" id="orangeCenter"></div>
+    <div class="orange car" id="orangeBack"></div>
     <div class="caption" id="bumpCap">On your way around, look to bump the center car</div>
     <div class="caption" id="backPostCap">rotate through the  back post, watch the cut back</div>
     <div class="caption" id="frontPostCap">Watch for the cross, wait for your teammate to challenge</div>

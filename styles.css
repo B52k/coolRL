@@ -16,6 +16,9 @@ p {
     margin: 30px;
     font-size: 12pt;
     line-height: 1.5;
+    text-align: justify;
+    padding: 5px;
+    max-width: 800px;
 }
 ul {
     text-align: left;
@@ -35,6 +38,14 @@ ol {
 .PS {
     font-style: italic;
 }
+.button {
+    background-color: #00109e;
+    color: white;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
 /* Diagram basics */
 .field {
     border-color: black;
@@ -47,7 +58,6 @@ ol {
     left: 100px;
 }
 .car {
-    border-color: blue;
     border-width: 10px;
     border-style: solid;
     border-radius: 50%;
@@ -69,13 +79,12 @@ ol {
     height: 100px;
     position: absolute;
 }
-/* The codes for arrows are here: https://www.toptal.com/designers/htmlarrows/arrows/ 
-.arrow {
-    width: 40px;
-    height: 40px;
-    font-size: 30px;
-    position: absolute;
-}*/
+.orange {
+    border-color: orange;
+}
+.blue {
+    border-color: blue;
+}
 /* first diagram ids */
 #kickOne { 
   top: 50px;
@@ -122,108 +131,4 @@ ol {
 #tieThree {
     left: 10px;
     top: 170px;
-}
-/*rotation diagram ids */
-#defOne{  
-    animation-name: rotationOne;
-    animation-duration: 9s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-out;
-}
-@keyframes rotationOne {
-    0% {
-        bottom: 0px;
-        left: 150px;
-    }
-    33% {
-        bottom: 250px;
-        left: 0px;
-    }
-    67%{
-        bottom: 100px;
-        left: 0px;
-    }
-    100% {
-        bottom: 0px;
-        left: 150px;
-    }
-}
-#defTwo {
-    animation-name: rotationTwo;
-    animation-duration: 9s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-out;
-}
-@keyframes rotationTwo {
-    0% {
-        bottom: 100px;
-        left: 0px;
-    }
-    33% {
-        bottom: 0px;
-        left: 150px;
-    }
-    67%{
-        bottom: 250px;
-        left: 0px;
-    }
-    100% {
-        bottom: 100px;
-        left: 0px;
-    }
-}
-#defThree {
-    animation-name: rotationThree;
-    animation-duration: 9s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-out;
-}
-@keyframes rotationThree {
-    0% {
-        bottom: 250px;
-        left: 0px;
-    }
-    33% {
-        bottom: 100px;
-        left: 0px;
-    }
-    67%{
-        bottom: 0px;
-        left: 150px;
-    }
-    100% {
-        bottom: 250px;
-        left: 0px;
-    }
-}
-#orangeOnBall {
-    border-color: orange;
-    left: 250px;
-    bottom: 0px;
-}
-#dRotationBall {
-    left: 200px;
-    bottom: 0px;
-}
-#orangeCenter {
-    left: 150px;
-    bottom: 150px;
-    border-color: orange;
-}
-#orangeBack {
-    right: 150px;
-    bottom: 100px;
-    border-color: orange;
-}
-#bumpCap {
-    top: 100px;
-    left: 200px;
-}
-#backPostCap {
-    top: 25px;
-    left: 25px;
-}
-#frontPostCap {
-    bottom: 0px;
-    left: 10px;
 }
