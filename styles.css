@@ -18,7 +18,7 @@ p {
     line-height: 1.5;
     text-align: justify;
     padding: 5px;
-    max-width: 800px;
+    width: 80%;
 }
 ul {
     text-align: left;
@@ -56,6 +56,7 @@ ol {
     height: 400px;
     position: relative;
     left: 100px;
+    left: 20%;
 }
 .car {
     border-width: 10px;
